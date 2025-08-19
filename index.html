@@ -4,46 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jithendra Nageswara Reddy Putturi | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-* { box-sizing: border-box; margin:0; padding:0; }
-body { font-family: 'Roboto', sans-serif; background:#f4f4f4; color:#333; line-height:1.6; }
-a { text-decoration:none; color:#1e3c72; }
-header { background:linear-gradient(90deg,#1e3c72,#2a5298); color:#fff; text-align:center; padding:60px 20px; }
-header h1 { font-size:2.5rem; margin-bottom:10px; }
-header p { font-size:1.1rem; margin-bottom:5px; }
-nav { display:flex; justify-content:center; background:#fff; padding:10px 0; box-shadow:0 2px 5px rgba(0,0,0,0.1); position:sticky; top:0; z-index:1000; flex-wrap:wrap; }
-nav a { margin:5px 15px; font-weight:500; }
-section { max-width:1000px; margin:auto; padding:60px 20px; }
-section h2 { text-align:center; margin-bottom:40px; color:#1e3c72; font-size:2rem; }
-.card { background:#fff; padding:20px; margin:20px 0; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); transition:transform 0.3s; }
-.card:hover { transform:translateY(-5px); }
-.skills { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
-.skill { flex:1 1 200px; background:#e3f2fd; padding:15px; border-radius:8px; text-align:center; }
-.skill h4 { margin-bottom:10px; }
-.skill-bar { background:#ddd; border-radius:5px; overflow:hidden; height:12px; margin-top:5px; }
-.skill-fill { height:12px; background:#1e3c72; width:0; transition:width 1.5s; }
-.timeline { border-left:3px solid #1e3c72; padding-left:20px; }
-.timeline-item { margin-bottom:20px; position:relative; }
-.timeline-item::before { content:''; position:absolute; left:-10px; top:5px; width:15px; height:15px; background:#1e3c72; border-radius:50%; }
-.contact-form input, .contact-form textarea { width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:5px; }
-.contact-form button { background:#1e3c72; color:#fff; border:none; padding:12px 20px; border-radius:5px; cursor:pointer; font-size:1rem; }
-.contact-form button:hover { background:#2a5298; }
-footer { background:#1e3c72; color:#fff; text-align:center; padding:20px; }
-@media(max-width:768px){ header h1{font-size:2rem;} section{padding:40px 15px;} }
-</style>
 </head>
 <body>
 
 <header>
-<h1>Jithendra Nagiiiiiiiiiii Reddy Putturi</h1>
+<div class="header-content">
+<img src="profile.jpg" alt="Jithendra Photo" class="profile-pic">
+<h1>Jithendra Nageswara Reddy Putturi</h1>
 <p>Software Engineer | Java • Python • Web Development • AI/ML</p>
-<p>+91 77939 34211 | jithendrareddy629@gmail.com</p>
-<p>
-<a href="https://www.linkedin.com/in/jithendranageswarareddyputturi" target="_blank" style="color:#fff;">LinkedIn</a> |
-<a href="https://github.com/Jithendranageswareddy" target="_blank" style="color:#fff;">GitHub</a>
-</p>
-<a href="#" style="color:#1e3c72; background:#fff; padding:10px 20px; border-radius:5px; display:inline-block; margin-top:15px;">View Resume</a>
+<a href="https://github.com/Jithendranageswarareddy/Jithendra-Portfolio/blob/main/PJNREDDY%20RESUME.pdf" target="_blank" class="btn">Download Resume</a>
+</div>
 </header>
 
 <nav>
@@ -59,13 +31,13 @@ footer { background:#1e3c72; color:#fff; text-align:center; padding:20px; }
 
 <section id="about">
 <h2>About Me</h2>
-<div class="card">
-<p>Passionate and driven software engineer eager to leverage my technical skills in Java, Python, and Web Development to contribute to innovative projects. I aim to grow professionally while delivering high-quality solutions.</p>
+<div class="card fade-up">
+<p>Passionate software engineer leveraging Java, Python, and web development to build impactful solutions. Continuously learning and delivering high-quality work.</p>
 <ul>
-<li>Quick Learner: Rapidly adapts to new technologies and frameworks</li>
-<li>Strong Communicator: Effective collaboration and technical communication</li>
-<li>Eager Explorer: Passionate about emerging technologies and innovation</li>
-<li>Adaptable: Flexible approach to solving complex problems</li>
+<li>Quick Learner</li>
+<li>Strong Communicator</li>
+<li>Eager Explorer</li>
+<li>Adaptable</li>
 </ul>
 </div>
 </section>
@@ -73,21 +45,34 @@ footer { background:#1e3c72; color:#fff; text-align:center; padding:20px; }
 <section id="skills">
 <h2>Skills & Expertise</h2>
 <div class="skills">
-<div class="skill"><h4>Java</h4><div class="skill-bar"><div class="skill-fill" style="width:85%;"></div></div></div>
-<div class="skill"><h4>Python</h4><div class="skill-bar"><div class="skill-fill" style="width:80%;"></div></div></div>
-<div class="skill"><h4>JavaScript</h4><div class="skill-bar"><div class="skill-fill" style="width:75%;"></div></div></div>
-<div class="skill"><h4>HTML/CSS</h4><div class="skill-bar"><div class="skill-fill" style="width:90%;"></div></div></div>
-<div class="skill"><h4>React</h4><div class="skill-bar"><div class="skill-fill" style="width:75%;"></div></div></div>
-<div class="skill"><h4>MySQL</h4><div class="skill-bar"><div class="skill-fill" style="width:80%;"></div></div></div>
-<div class="skill"><h4>NumPy & Pandas</h4><div class="skill-bar"><div class="skill-fill" style="width:80%;"></div></div></div>
+<div class="skill">
+<h4>Java</h4>
+<div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+</div>
+<div class="skill">
+<h4>Python</h4>
+<div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+</div>
+<div class="skill">
+<h4>JavaScript</h4>
+<div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+</div>
+<div class="skill">
+<h4>HTML/CSS</h4>
+<div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+</div>
+<div class="skill">
+<h4>React</h4>
+<div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+</div>
 </div>
 </section>
 
 <section id="education">
 <h2>Education</h2>
-<div class="timeline">
+<div class="timeline fade-up">
 <div class="timeline-item">
-<h3>B.Tech in Computer Science & Engineering</h3>
+<h3>B.Tech in CSE</h3>
 <p>XYZ Institute of Technology | 2020–2024 | 8.5 CGPA</p>
 </div>
 <div class="timeline-item">
@@ -103,70 +88,68 @@ footer { background:#1e3c72; color:#fff; text-align:center; padding:20px; }
 
 <section id="experience">
 <h2>Experience & Internships</h2>
-<div class="card">
+<div class="card fade-up">
 <h3>Software Development Intern | TechCorp Solutions</h3>
 <p>Jun 2023 - Aug 2023, Hyderabad, India</p>
 <ul>
-<li>Developed responsive web applications using React and Node.js</li>
-<li>Collaborated with senior developers on API integration and testing</li>
-<li>Implemented user authentication and database optimization features</li>
+<li>Developed responsive web apps using React & Node.js</li>
+<li>Collaborated on API integration and testing</li>
+<li>Implemented user authentication & database optimization</li>
 </ul>
 </div>
-
-<div class="card">
+<div class="card fade-up">
 <h3>AI/ML Research Intern | DataScience Labs</h3>
 <p>Dec 2022 - Feb 2023, Bangalore, India</p>
 <ul>
-<li>Worked on machine learning models for predictive analytics</li>
-<li>Analyzed large datasets using Python and scikit-learn</li>
-<li>Created data visualizations and presented findings to the team</li>
+<li>Worked on ML models for predictive analytics</li>
+<li>Analyzed large datasets using Python & scikit-learn</li>
+<li>Created interactive data visualizations</li>
 </ul>
 </div>
-
-<div class="card">
-<h3>Web Development Trainee | StartupHub Incubator</h3>
+<div class="card fade-up">
+<h3>Web Dev Trainee | StartupHub Incubator</h3>
 <p>May 2022 - Jul 2022, Chennai, India</p>
 <ul>
-<li>Built portfolio websites for startup clients using HTML, CSS, and JavaScript</li>
-<li>Learned modern web development frameworks and best practices</li>
-<li>Participated in code reviews and agile development processes</li>
+<li>Built portfolio websites using HTML, CSS & JS</li>
+<li>Learned modern web dev frameworks & best practices</li>
+<li>Participated in code reviews & agile processes</li>
 </ul>
 </div>
 </section>
 
 <section id="projects">
 <h2>Projects & Training</h2>
-<div class="card">
+<div class="card fade-up">
 <h3>Be10x AI Tools Workshop</h3>
-<p>Mastered 15+ AI productivity tools, created automated workflows and AI-powered business solutions.</p>
+<p>Mastered 15+ AI productivity tools and built automated workflows.</p>
 </div>
-<div class="card">
+<div class="card fade-up">
 <h3>E-Commerce Web Platform</h3>
 <p>Full-stack platform with responsive design, secure payments, and real-time inventory management.</p>
 </div>
-<div class="card">
+<div class="card fade-up">
 <h3>Machine Learning Predictor</h3>
 <p>Predictive analytics system with interactive dashboards and 95% prediction accuracy.</p>
 </div>
-<div class="card">
+<div class="card fade-up">
 <h3>Task Management System</h3>
-<p>Collaborative web app with real-time updates, drag-and-drop tasks, and productivity analytics.</p>
+<p>Collaborative web app with real-time updates and drag-and-drop tasks.</p>
 </div>
 </section>
 
 <section id="certifications">
 <h2>Certifications</h2>
-<div class="skills">
-<div class="skill"><h4>AI & ML</h4><p>Intro to AI, Generative AI, NLP, Deep Learning, Data Science, Computer Vision</p></div>
-<div class="skill"><h4>Programming & Web</h4><p>Data Structures & Algorithms, JavaScript, HTML-5, CSS, R Programming</p></div>
-<div class="skill"><h4>Salesforce</h4><p>Apex Programming, Visualforce, Lightning Components, Platform Development & Integration</p></div>
-<div class="skill"><h4>Soft Skills</h4><p>Email Writing, Time Management</p></div>
+<div class="card fade-up">
+<p>AI & ML: Intro to AI, Generative AI, NLP, Deep Learning, Data Science, Computer Vision</p>
+<p>Programming & Web: Data Structures & Algorithms, JavaScript, HTML-5, CSS, R Programming</p>
+<p>Salesforce: Apex Programming, Visualforce, Lightning Components, Platform Development & Integration</p>
+<p>Soft Skills: Email Writing, Time Management</p>
 </div>
 </section>
 
 <section id="hobbies">
 <h2>Hobbies & Interests</h2>
-<div class="skills">
+<div class="skills fade-up">
 <div class="skill"><h4>Typing Practice</h4></div>
 <div class="skill"><h4>Tech News & Tools</h4></div>
 <div class="skill"><h4>Podcasts</h4></div>
@@ -177,7 +160,7 @@ footer { background:#1e3c72; color:#fff; text-align:center; padding:20px; }
 
 <section id="contact">
 <h2>Contact</h2>
-<div class="card contact-form">
+<div class="card contact-form fade-up">
 <input type="text" placeholder="First Name">
 <input type="text" placeholder="Last Name">
 <input type="email" placeholder="Email">
@@ -191,16 +174,6 @@ footer { background:#1e3c72; color:#fff; text-align:center; padding:20px; }
 <p>© 2025 Jithendra Nageswara Reddy Putturi | Built with HTML, CSS & JS</p>
 </footer>
 
-<script>
-// Animate skill bars
-window.addEventListener('DOMContentLoaded', () => {
-document.querySelectorAll('.skill-fill').forEach(el => {
-let width = el.style.width;
-el.style.width = '0';
-setTimeout(()=>{ el.style.width = width; }, 500);
-});
-});
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
