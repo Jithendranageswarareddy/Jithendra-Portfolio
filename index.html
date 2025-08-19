@@ -1,102 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jithendra Nageswara Reddy Putturi | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+header {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+}
+nav {
+    background-color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1e3c72;
+    font-weight: 500;
+}
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1e3c72;
+    font-size: 2rem;
+}
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.skill {
+    flex: 1 1 200px;
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+.skill h4 {
+    margin: 10px 0;
+}
+.timeline {
+    border-left: 3px solid #1e3c72;
+    padding-left: 20px;
+}
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #1e3c72;
+    border-radius: 50%;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    background-color: #1e3c72;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.contact-form button:hover {
+    background-color: #2a5298;
+}
+footer {
+    background-color: #1e3c72;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+@media(max-width:768px){
+    header h1 {
+        font-size: 2rem;
+    }
+    section {
+        padding: 40px 15px;
+    }
+}
+</style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Hi, I am Jithendra Nageswara Reddy Putturi</h1>
-        <p>Welcome to my portfolio. I am a passionate Web Developer.</p>
-        <img src="JITHENDRA REDDY pic.jpg" alt="Jithendra" width="100px" height="100px">
-    </section>
+<header>
+    <h1>Jithendra Nageswara Reddy Putturi</h1>
+    <p>Software Engineer | Java, Python, Web Development & AI/ML</p>
+    <p>Phone: +91 77939 34211 | Email: jithendrareddy629@gmail.com</p>
+    <p>
+        <a href="https://www.linkedin.com/in/jithendranageswarareddyputturi" target="_blank" style="color:#fff;text-decoration:underline;">LinkedIn</a> |
+        <a href="https://github.com/Jithendranageswarareddy" target="_blank" style="color:#fff;text-decoration:underline;">GitHub</a>
+    </p>
+</header>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a 3rd-year B.Tech student with an interest in Web Development.</p>
-        <h3>Skills</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-        <h3>Education</h3>
-        <table border="1">
-            <tr>
-                <th>Education</th>
-                <th>Institute Name</th>
-                <th>Score</th>
-                <th>Address</th>
-            </tr>
-            <tr>
-                <td>Degree</td>
-                <td>Dvr & Dr.HS Mic College of Technology</td>
-                <td>7.91 CGPA</td>
-                <td>Kanchikacherla, NTR District</td>
-            </tr>
-            <tr>
-                <td>Intermediate</td>
-                <td>Sri Akshara Jr College</td>
-                <td>73%</td>
-                <td>Kanchikacherla, NTR District</td>
-            </tr>
-            <tr>
-                <td>High School</td>
-                <td>VijayaRani EM High School</td>
-                <td>9.3 GPA</td>
-                <td>Kanchikacherla, NTR District</td>
-            </tr>
-        </table>
-    </section>
+<nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <article>
-            <h3>Project 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum delectus quo cumque necessitatibus dolorem corporis ut illo praesentium reiciendis fugiat tenetur, sequi mollitia totam saepe fugit vitae odio, illum et?</p>
-        </article>
-        <article>
-            <h3>Project 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum delectus quo cumque necessitatibus dolorem corporis ut illo praesentium reiciendis fugiat tenetur, sequi mollitia totam saepe fugit vitae odio, illum et?</p>
-        </article>
-        <article>
-            <h3>Project 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum delectus quo cumque necessitatibus dolorem corporis ut illo praesentium reiciendis fugiat tenetur, sequi mollitia totam saepe fugit vitae odio, illum et?</p>
-        </article>
-    </section>
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>Passionate Software Engineer with expertise in Java, Python, Web Development, and AI/ML, aiming to contribute to innovative projects and deliver impactful solutions while continuously expanding technical skills. Quick learner, adaptable, strong communicator, and eager to explore new technologies.</p>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="">
-            <label for="name">Name:</label>
-            <input type="text" id="name"><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email"><br>
-            <label for="message">Message:</label>
-            <textarea name="message" id="message"></textarea>
-            <input type="submit" value="Send">
-        </form>
-    </section>
+<section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <h3>B.Tech in Computer Science and Engineering</h3>
+            <p>DVR & Dr. HS MIC College of Technology | 2022–2026 | CGPA: 7.96</p>
+        </div>
+        <div class="timeline-item">
+            <h3>Intermediate (MPC)</h3>
+            <p>Sri Akshara Junior College | 2019–2021 | 72.8%</p>
+        </div>
+        <div class="timeline-item">
+            <h3>SSC</h3>
+            <p>Vijayarani EM High School | 2019 | GPA: 9.3</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 All Rights Reserved</p>
-    </footer>
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">
+            <h4>Programming</h4>
+            <p>Java, Python, R (Basic), Kotlin (Basic)</p>
+        </div>
+        <div class="skill">
+            <h4>Web Technologies</h4>
+            <p>HTML, CSS, JavaScript, React (Basic)</p>
+        </div>
+        <div class="skill">
+            <h4>Databases</h4>
+            <p>MySQL</p>
+        </div>
+        <div class="skill">
+            <h4>Python Libraries</h4>
+            <p>NumPy, Pandas</p>
+        </div>
+        <div class="skill">
+            <h4>Tools & Platforms</h4>
+            <p>Anaconda, Google Colab, MS Office</p>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+        <h3>Google Android Developer Virtual Internship | Apr – Jun 2024</h3>
+        <p>Developed foundational Android applications using XML and Java/Kotlin.</p>
+    </div>
+    <div class="card">
+        <h3>Google AI-ML Virtual Internship | Jul – Sep 2024</h3>
+        <p>Built basic Android applications using XML and Java/Kotlin.</p>
+    </div>
+    <div class="card">
+        <h3>Web Full Stack Developer Virtual Internship | Oct – Dec 2024</h3>
+        <p>Gained hands-on experience in front-end (HTML, CSS, JS) and basic back-end concepts.</p>
+    </div>
+    <div class="card">
+        <h3>Generative AI & Prompt Engineering Virtual Internship | May – Jul 2025</h3>
+        <p>Gained practical experience in prompting, LLM behaviour, and Gen-AI based applications.</p>
+    </div>
+</section>
+
+<section id="certifications">
+    <h2>Certifications</h2>
+    <div class="skills">
+        <div class="skill">
+            <h4>AI & ML</h4>
+            <p>Intro to AI, Generative AI, NLP, Deep Learning, Data Science, Computer Vision</p>
+        </div>
+        <div class="skill">
+            <h4>Programming & Web</h4>
+            <p>Data Structures & Algorithms (Java), JavaScript, R Programming, HTML-5, CSS</p>
+        </div>
+        <div class="skill">
+            <h4>Salesforce</h4>
+            <p>Apex Programming, Visualforce Pages, Lightning Components, Platform Development & Integration</p>
+        </div>
+        <div class="skill">
+            <h4>Soft Skills</h4>
+            <p>Email Writing Skills, Time Management</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Jithendra Nageswara Reddy Putturi | Built with HTML & CSS</p>
+</footer>
+
 </body>
 </html>
