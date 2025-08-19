@@ -1,187 +1,209 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jithendra Nageswara Reddy Putturi - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jithendra Nageswara Reddy Putturi | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: 'Roboto', sans-serif; color:#333; line-height:1.6; background:#f4f4f4; }
+a { text-decoration:none; color:#1e3c72; }
+header { background: linear-gradient(90deg,#1e3c72,#2a5298); color:#fff; text-align:center; padding:60px 20px; }
+header h1 { font-size:2.5rem; margin-bottom:10px; }
+header p { font-size:1.1rem; margin-bottom:5px; }
+nav { display:flex; justify-content:center; background:#fff; padding:10px 0; box-shadow:0 2px 5px rgba(0,0,0,0.1); position:sticky; top:0; z-index:1000; flex-wrap:wrap; }
+nav a { margin:5px 15px; font-weight:500; }
+section { max-width:1000px; margin:auto; padding:60px 20px; }
+section h2 { text-align:center; margin-bottom:40px; color:#1e3c72; font-size:2rem; }
+.card { background:#fff; padding:20px; margin:20px 0; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); transition:transform 0.3s; }
+.card:hover { transform:translateY(-5px); }
+.skills { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+.skill { flex:1 1 200px; background:#e3f2fd; padding:15px; border-radius:8px; text-align:center; }
+.skill h4 { margin-bottom:10px; }
+.skill-bar { background:#ddd; border-radius:5px; overflow:hidden; height:12px; margin-top:5px; }
+.skill-fill { height:12px; background:#1e3c72; width:0; transition:width 1.5s; }
+.timeline { border-left:3px solid #1e3c72; padding-left:20px; }
+.timeline-item { margin-bottom:20px; position:relative; }
+.timeline-item::before { content:''; position:absolute; left:-10px; top:5px; width:15px; height:15px; background:#1e3c72; border-radius:50%; }
+.contact-form input, .contact-form textarea { width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:5px; }
+.contact-form button { background:#1e3c72; color:#fff; border:none; padding:12px 20px; border-radius:5px; cursor:pointer; font-size:1rem; }
+.contact-form button:hover { background:#2a5298; }
+footer { background:#1e3c72; color:#fff; text-align:center; padding:20px; }
+@media(max-width:768px){ header h1{font-size:2rem;} section{padding:40px 15px;} }
+</style>
 </head>
 <body>
 
-    <!-- Header e Navigazione -->
-    <header>
-        <div class="container">
-            <h1 class="logo">Jithendra Nageswara Reddy Putturi</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">Chi sono</a></li>
-                    <li><a href="#education">Istruzione</a></li>
-                    <li><a href="#skills">Competenze</a></li>
-                    <li><a href="#experience">Esperienza</a></li>
-                    <li><a href="#contact">Contatti</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header>
+<h1>Jithendra Nageswara Reddy Putturi</h1>
+<p>Software Engineer | Java • Python • Web Development • AI/ML</p>
+<p>+91 77939 34211 | jithendrareddy629@gmail.com</p>
+<p>
+<a href="https://www.linkedin.com/in/jithendranageswarareddyputturi" target="_blank" style="color:#fff;">LinkedIn</a> |
+<a href="https://github.com/Jithendranageswareddy" target="_blank" style="color:#fff;">GitHub</a>
+</p>
+<a href="#" style="color:#1e3c72; background:#fff; padding:10px 20px; border-radius:5px; display:inline-block; margin-top:15px;">View Resume</a>
+</header>
 
-    <main>
-        <!-- Sezione About Me -->
-        <section id="about" class="container">
-            <h2>Chi sono</h2>
-            <p class="objective">Ingegnere del software appassionato con esperienza in Java, Python, sviluppo web e AI/ML, con l'obiettivo di contribuire a progetti innovativi e fornire soluzioni di impatto, espandendo continuamente le mie competenze tecniche.</p>
-            <a href="Jithendra_Resume.pdf" class="btn" download>Scarica il mio CV <i class="fas fa-download"></i></a>
-        </section>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#education">Education</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
+<a href="#hobbies">Hobbies</a>
+<a href="#contact">Contact</a>
+</nav>
 
-        <!-- Sezione Istruzione -->
-        <section id="education" class="container">
-            <h2>Istruzione</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>B.Tech in Informatica e Ingegneria</h3>
-                    <p>DVR & Dr. HS MIC College of Technology, Kanchikacherla | 2022–2026</p>
-                    <p><strong>CGPA:</strong> 7.96</p>
-                </div>
-                <div class="card">
-                    <h3>Intermedio (MPC)</h3>
-                    <p>Sri Akshara Junior College, Kanchikacherla | 2019–2021</p>
-                    <p><strong>Percentuale:</strong> 72.8%</p>
-                </div>
-                <div class="card">
-                    <h3>SSC</h3>
-                    <p>Vijayarani EM High School, Kanchikacherla | 2019</p>
-                    <p><strong>GPA:</strong> 9.3</p>
-                </div>
-            </div>
-        </section>
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>Passionate Software Engineer skilled in Java, Python, Web Development, and AI/ML. Eager to contribute to innovative projects while continuously enhancing technical expertise. Thrives in collaborative environments and adapts quickly to emerging technologies.</p>
+<ul>
+<li>Quick Learner: Rapidly adapts to new technologies and frameworks</li>
+<li>Strong Communicator: Effective collaboration and technical communication</li>
+<li>Eager Explorer: Passionate about emerging technologies and innovation</li>
+<li>Adaptable: Flexible approach to solving complex problems</li>
+</ul>
+</div>
+</section>
 
-        <!-- Sezione Competenze -->
-        <section id="skills" class="container">
-            <h2>Competenze</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Programmazione</h3>
-                    <p>Java, Python, R (Base), Kotlin (Base)</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Web</h3>
-                    <p>HTML, CSS, JavaScript, React (Base)</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Database</h3>
-                    <p>MySQL</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-python"></i>
-                    <h3>Librerie Python</h3>
-                    <p>NumPy, Pandas</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Strumenti e Piattaforme</h3>
-                    <p>Anaconda, Google Colab, MS Office</p>
-                </div>
-                 <div class="skill-card">
-                    <i class="fas fa-comments"></i>
-                    <h3>Soft Skills</h3>
-                    <p>Comunicazione, Collaborazione in team, Apprendimento rapido</p>
-                </div>
-            </div>
-        </section>
+<section id="skills">
+<h2>Skills & Expertise</h2>
+<div class="skills">
+<div class="skill">
+<h4>Java</h4>
+<div class="skill-bar"><div class="skill-fill" style="width:85%;"></div></div>
+</div>
+<div class="skill">
+<h4>Python</h4>
+<div class="skill-bar"><div class="skill-fill" style="width:80%;"></div></div>
+</div>
+<div class="skill">
+<h4>JavaScript</h4>
+<div class="skill-bar"><div class="skill-fill" style="width:75%;"></div></div>
+</div>
+<div class="skill">
+<h4>HTML/CSS</h4>
+<div class="skill-bar"><div class="skill-fill" style="width:90%;"></div></div>
+</div>
+<div class="skill">
+<h4>React</h4>
+<div class="skill-bar"><div class="skill-fill" style="width:75%;"></div></div>
+</div>
+<div class="skill">
+<h4>MySQL</h4>
+<div class="skill-bar"><div class="skill-fill" style="width:80%;"></div></div>
+</div>
+<div class="skill">
+<h4>NumPy & Pandas</h4>
+<div class="skill-bar"><div class="skill-fill" style="width:80%;"></div></div>
+</div>
+</div>
+</section>
 
-        <!-- Sezione Esperienza -->
-        <section id="experience" class="container">
-            <h2>Esperienza</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Sviluppatore Android Virtuale</h3>
-                    <p><strong>Google</strong> | Apr – Giu 2024</p>
-                    <p>Sviluppo di applicazioni Android fondamentali utilizzando XML e Java/Kotlin.</p>
-                </div>
-                <div class="card">
-                    <h3>AI-ML Virtuale</h3>
-                    <p><strong>Google</strong> | Lug – Set 2024</p>
-                    <p>Costruzione di applicazioni Android di base utilizzando XML e Java/Kotlin.</p>
-                </div>
-                <div class="card">
-                    <h3>Sviluppatore Web Full Stack Virtuale</h3>
-                    <p><strong>Stage virtuale</strong> | Ott – Dic 2024</p>
-                    <p>Esperienza pratica in front-end (HTML, CSS, JS) e concetti di base del back-end.</p>
-                </div>
-                 <div class="card">
-                    <h3>AI Generativa e Ingegneria del Prompt</h3>
-                    <p><strong>Stage virtuale</strong> | Mag – Lug 2025</p>
-                    <p>Esperienza pratica nel prompting, nel comportamento dei LLM e nelle applicazioni di Gen-AI.</p>
-                </div>
-            </div>
-        </section>
+<section id="education">
+<h2>Education</h2>
+<div class="timeline">
+<div class="timeline-item">
+<h3>B.Tech in Computer Science & Engineering</h3>
+<p>DVR & Dr. HS MIC College of Technology | 2022–2026 | CGPA: 7.96</p>
+</div>
+<div class="timeline-item">
+<h3>Intermediate (MPC)</h3>
+<p>Sri Akshara Junior College | 2019–2021 | 72.8%</p>
+</div>
+<div class="timeline-item">
+<h3>SSC</h3>
+<p>Vijayarani EM High School | 2019 | GPA: 9.3</p>
+</div>
+</div>
+</section>
 
-        <!-- Sezione Progetti/Formazione -->
-        <section id="projects" class="container">
-             <h2>Formazione e Workshop</h2>
-             <div class="card">
-                 <h3>Workshop Be10x</h3>
-                 <p>Partecipazione al workshop Be10x, esplorando 15 strumenti di IA per migliorare la produttività e l'efficienza.</p>
-             </div>
-        </section>
+<section id="experience">
+<h2>Experience & Internships</h2>
+<div class="card">
+<h3>Google Android Developer Virtual Internship | Apr – Jun 2024</h3>
+<p>Developed foundational Android applications using XML and Java/Kotlin.</p>
+</div>
+<div class="card">
+<h3>Google AI-ML Virtual Internship | Jul – Sep 2024</h3>
+<p>Built basic Android applications using XML and Java/Kotlin.</p>
+</div>
+<div class="card">
+<h3>Web Full Stack Developer Virtual Internship | Oct – Dec 2024</h3>
+<p>Gained hands-on experience in front-end (HTML, CSS, JS) and basic back-end concepts.</p>
+</div>
+<div class="card">
+<h3>Generative AI & Prompt Engineering Virtual Internship | May – Jul 2025</h3>
+<p>Gained practical experience in prompting, LLM behaviour, and Gen-AI applications.</p>
+</div>
+</section>
 
-        <!-- Sezione Certificazioni -->
-        <section id="certifications" class="container">
-            <h2>Certificazioni</h2>
-            <ul>
-                <li><strong>AI & ML:</strong> Intro to AI, Generative AI, NLP, Deep Learning, Data Science, Computer Vision</li>
-                <li><strong>Programmazione e Web:</strong> Data Structures & Algorithms (Java), JavaScript, R Programming, HTML-5, CSS</li>
-                <li><strong>Salesforce:</strong> Apex Programming, Visualforce Pages, Lightning Components Overview, Platform Development, Integration</li>
-                <li><strong>Soft Skills:</strong> Email Writing Skills, Time Management</li>
-            </ul>
-        </section>
+<section id="projects">
+<h2>Projects & Training</h2>
+<div class="card">
+<h3>Be10x AI Tools Workshop</h3>
+<p>Mastered 15+ AI productivity tools and created AI-powered business solutions.</p>
+</div>
+<div class="card">
+<h3>E-Commerce Web Platform</h3>
+<p>Full-stack platform with responsive design, secure payments, and real-time inventory.</p>
+</div>
+<div class="card">
+<h3>Machine Learning Predictor</h3>
+<p>Predictive analytics system with interactive data visualizations and 95% accuracy.</p>
+</div>
+<div class="card">
+<h3>Task Management System</h3>
+<p>Collaborative web app with real-time updates, drag-and-drop tasks, and productivity analytics.</p>
+</div>
+</section>
 
-        <!-- Sezione Hobby e Punti di forza -->
-        <section id="hobbies" class="container">
-            <h2>Hobby e Punti di Forza</h2>
-             <div class="card-container">
-                <div class="card">
-                    <h3>Hobby</h3>
-                    <p>Pratica di digitazione, esplorazione di strumenti e notizie tecnologiche, ascolto di podcast, cucina, passeggiate.</p>
-                </div>
-                <div class="card">
-                    <h3>Punti di Forza</h3>
-                    <p>Apprendimento rapido, adattabile, buon comunicatore, forte velocità di digitazione, desideroso di esplorare nuove tecnologie.</p>
-                </div>
-            </div>
-        </section>
+<section id="certifications">
+<h2>Certifications</h2>
+<div class="skills">
+<div class="skill"><h4>AI & ML</h4><p>Intro to AI, Generative AI, NLP, Deep Learning, Data Science, Computer Vision</p></div>
+<div class="skill"><h4>Programming & Web</h4><p>Data Structures & Algorithms, JavaScript, HTML-5, CSS, R Programming</p></div>
+<div class="skill"><h4>Salesforce</h4><p>Apex Programming, Visualforce, Lightning Components, Platform Development & Integration</p></div>
+<div class="skill"><h4>Soft Skills</h4><p>Email Writing, Time Management</p></div>
+</div>
+</section>
 
-        <!-- Sezione Contatti -->
-        <section id="contact" class="container">
-            <h2>Contattami</h2>
-            <div class="contact-flex">
-                <div class="contact-info">
-                    <p><i class="fas fa-phone"></i> +91 77939 34211</p>
-                    <p><i class="fas fa-envelope"></i> jithendrareddy629@gmail.com</p>
-                    <p><i class="fab fa-linkedin"></i> <a href="http://www.linkedin.com/in/jithendranageswarareddyputturi" target="_blank">LinkedIn</a></p>
-                    <p><i class="fab fa-github"></i> <a href="https://github.com/Jithendranageswareddy" target="_blank">GitHub</a></p>
-                    <p><i class="fas fa-globe"></i> <a href="https://pjnreddyportfolio.vercel.app/" target="_blank">Sito Portfolio</a></p>
-                </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Il tuo nome" required>
-                    <input type="email" placeholder="La tua email" required>
-                    <textarea placeholder="Il tuo messaggio" rows="5" required></textarea>
-                    <button type="submit" class="btn">Invia Messaggio</button>
-                </form>
-            </div>
-        </section>
-    </main>
+<section id="hobbies">
+<h2>Hobbies & Interests</h2>
+<div class="skills">
+<div class="skill"><h4>Typing Practice</h4></div>
+<div class="skill"><h4>Tech News & Tools</h4></div>
+<div class="skill"><h4>Podcasts</h4></div>
+<div class="skill"><h4>Cooking</h4></div>
+<div class="skill"><h4>Walking</h4></div>
+</div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Jithendra Nageswara Reddy Putturi. Tutti i diritti riservati.</p>
-        </div>
-    </footer>
+<section id="contact">
+<h2>Contact</h2>
+<div class="card contact-form">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</div>
+</section>
+
+<footer>
+<p>© 2025 Jithendra Nageswara Reddy Putturi | Built with HTML & CSS</p>
+</footer>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+document.querySelectorAll('.skill-fill').forEach(el => {
+el.style.width = el.style.width;
+});
+});
+</script>
 
 </body>
 </html>
